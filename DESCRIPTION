@@ -1,0 +1,13 @@
+Package: GeNPF
+Title: IMCM General Purpose Functions
+Version: 0.0.0.9000
+Authors@R: 
+    person("Christopher", "Maronga", , "marongachristopher@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package contains the general purpose functions for use within IMCM Data Team. Data interaction with 
+             Terra Bio platform, custom functions for creating tables etc.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
