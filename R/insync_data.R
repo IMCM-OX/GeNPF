@@ -1,14 +1,14 @@
 #' Synchronizing google bucket contents into Terra.
 #'
-#' @param source_bucket A string representing the google bucket id
-#' @param folder_name The folder name as it appears in the Terra Workspace
+#' @param source_bucket A string representing the google bucket id.
+#' @param folder_name The folder name as it appears in the Terra Workspace.
 #'
-#' @return Side effect; synchronized folder contents
+#' @return Side effect; synchronized folder contents.
 #' @export
 #'
 #' @examples
 #'
-insync_data <- function(source_bucket = NULL, folder_name = "data"){
+insync_data <- function(source_bucket = avbucket(), folder_name = "data"){
 
   # use case source_bucket + folder_name
   bucket_path <- stringr::str_glue("{source_bucket}/{folder_name}/")

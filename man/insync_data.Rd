@@ -4,15 +4,15 @@
 \alias{insync_data}
 \title{Synchronizing google bucket contents into Terra.}
 \usage{
-insync_data(source_bucket = NULL, folder_name = "data")
+insync_data(source_bucket = avbucket(), folder_name = "data")
 }
 \arguments{
-\item{source_bucket}{A string representing the google bucket id}
+\item{source_bucket}{A string representing the google bucket id.}
 
-\item{folder_name}{The folder name as it appears in the Terra Workspace}
+\item{folder_name}{The folder name as it appears in the Terra Workspace.}
 }
 \value{
-Side effect; synchronized folder contents
+Side effect; synchronized folder contents.
 }
 \description{
 Synchronizing google bucket contents into Terra.
