@@ -6,7 +6,14 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of GeNPF is to …
+The goal of General Purpose Functions (GeNPF) is to offer user define
+functions for a seamless yet standardized workflow for working with data
+between google bucket and Terra persistent disk within Institute of
+Molecular and Computational Medicine (IMCM).
+
+The main goal of {GeNPF} is to achieve a painless pull and push of data
+between workspaces and Rstudio interactive environment, saving time for
+analysis and data exploration.
 
 ## Installation
 
