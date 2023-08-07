@@ -8,7 +8,7 @@
 #'
 #' @examples
 #'
-insync_data <- function(source_bucket = avbucket(), folder_name = "data"){
+insync_data <- function(source_bucket = AnVIL::avbucket(), folder_name = "data"){
 
   # use case source_bucket + folder_name
   bucket_path <- stringr::str_glue("{source_bucket}/{folder_name}/")
