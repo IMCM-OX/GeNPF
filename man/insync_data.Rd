@@ -2,9 +2,9 @@
 % Please edit documentation in R/insync_data.R
 \name{insync_data}
 \alias{insync_data}
-\title{Synchronizing google bucket contents into Terra.}
+\title{Synchronizing google bucket contents into Terra persistent disk.}
 \usage{
-insync_data(source_bucket = avbucket(), folder_name = "data")
+insync_data(source_bucket = AnVIL::avbucket(), folder_name = "data")
 }
 \arguments{
 \item{source_bucket}{A string representing the google bucket id.}
@@ -15,5 +15,5 @@ insync_data(source_bucket = avbucket(), folder_name = "data")
 Side effect; synchronized folder contents.
 }
 \description{
-Synchronizing google bucket contents into Terra.
+Synchronizing google bucket contents into Terra persistent disk.
 }

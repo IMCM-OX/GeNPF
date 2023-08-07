@@ -1,4 +1,4 @@
-#' Synchronizing google bucket contents into Terra.
+#' Synchronizing google bucket contents into Terra persistent disk.
 #'
 #' @param source_bucket A string representing the google bucket id.
 #' @param folder_name The folder name as it appears in the Terra Workspace.
