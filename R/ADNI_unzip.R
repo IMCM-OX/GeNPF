@@ -8,6 +8,8 @@
 #' @examples
 ADNI_unzip <- function(dest_folder = "data_unziped"){
 
+  library(foreach) # because of the %do%, need to find a better way of reffering
+
   # 'data' should not be used as folder name
   if(dest_folder %in% c("Data", "data")) stop("Choose a different destination folder name!")
 
@@ -33,7 +35,7 @@ ADNI_unzip <- function(dest_folder = "data_unziped"){
   v_biospec <- list.files(xfun::relative_path(here::here({dest_folder})),
                           recursive = T, pattern = ".zst")
 
-  foreach(biospec_file = v_biospec)%do%{
+  foreach::foreach(biospec_file = v_biospec)%do%{
 
     # extract folder tag for path specification
     path_folder <- str_split(string = biospec_file, pattern = "/")[[1]][1]
