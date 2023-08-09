@@ -1,6 +1,6 @@
 #' Synchronizing google bucket contents into Terra persistent disk.
 #'
-#' @param source_bucket A string representing the google bucket id.
+#' @param source_bucket A string representing the google bucket id such as `gs://fc-12345cfd-756f-5e19-b0c5-fbc6b26a067d`
 #' @param folder_name The folder name as it appears in the Terra Workspace.
 #'
 #' @return Side effect; synchronized folder contents.
@@ -10,7 +10,7 @@
 #'
 insync_data <- function(source_bucket, folder_name = "data"){
 
-  if(missing(source_bucket)) stop("Provide a google bucket ID in the format gs://xxxxx.yyy.zz")
+  if(missing(source_bucket)) stop("Provide a source bucket ID in the format gs://xxxxx.yyy.zz")
 
   # use case source_bucket + folder_name
   bucket_path <- stringr::str_glue("{source_bucket}/{folder_name}/")
@@ -27,4 +27,5 @@ insync_data <- function(source_bucket, folder_name = "data"){
                dry = FALSE,
                recursive = TRUE)
 }
+
 

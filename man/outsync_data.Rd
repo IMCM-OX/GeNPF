@@ -4,10 +4,10 @@
 \alias{outsync_data}
 \title{Synchronizing persistent disk contents into google bucket}
 \usage{
-outsync_data(destination_bucket = AnVIL::avbucket(), folder_name = "data")
+outsync_data(destination_bucket, folder_name = "data")
 }
 \arguments{
-\item{destination_bucket}{A string representing the destination bucket id.}
+\item{destination_bucket}{A string representing the destination bucket id such as \verb{gs://fc-12345cfd-756f-5e19-b0c5-fbc6b26a067d}}
 
 \item{folder_name}{The folder name as it appears in the persistent disk AND Terra workspace that contains data and files to sync back.}
 }
