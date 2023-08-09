@@ -8,7 +8,9 @@
 #'
 #' @examples
 #'
-insync_data <- function(source_bucket = AnVIL::avbucket(), folder_name = "data"){
+insync_data <- function(source_bucket, folder_name = "data"){
+
+  if(missing(source_bucket)) stop("Provide a google bucket ID in the format gs://xxxxx.yyy.zz")
 
   # use case source_bucket + folder_name
   bucket_path <- stringr::str_glue("{source_bucket}/{folder_name}/")
@@ -25,3 +27,4 @@ insync_data <- function(source_bucket = AnVIL::avbucket(), folder_name = "data")
                dry = FALSE,
                recursive = TRUE)
 }
+

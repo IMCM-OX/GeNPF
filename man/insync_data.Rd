@@ -4,7 +4,7 @@
 \alias{insync_data}
 \title{Synchronizing google bucket contents into Terra persistent disk.}
 \usage{
-insync_data(source_bucket = AnVIL::avbucket(), folder_name = "data")
+insync_data(source_bucket, folder_name = "data")
 }
 \arguments{
 \item{source_bucket}{A string representing the google bucket id.}
