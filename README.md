@@ -13,7 +13,8 @@ Molecular and Computational Medicine (IMCM).
 
 The main goal of {GeNPF} is to achieve a painless pull and push of data
 between workspaces and Rstudio interactive environment, saving time for
-analysis and data exploration.
+analysis and data exploration. It’s a wrapper around `gsutil` and other
+tools to work with data in the cloud.
 
 ## Installation
 
