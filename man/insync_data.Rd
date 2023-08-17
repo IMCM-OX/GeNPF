@@ -4,12 +4,14 @@
 \alias{insync_data}
 \title{Synchronizing google bucket contents into Terra persistent disk.}
 \usage{
-insync_data(source_bucket, folder_name = "data")
+insync_data(source_bucket, folder_name = "data", sub_folder)
 }
 \arguments{
 \item{source_bucket}{A string representing the google bucket id such as \verb{gs://fc-12345cfd-756f-5e19-b0c5-fbc6b26a067d}}
 
 \item{folder_name}{The folder name as it appears in the Terra Workspace.}
+
+\item{sub_folder}{The data sub-folder you want to suncy/import.}
 }
 \value{
 Side effect; synchronized folder contents.

@@ -23,7 +23,7 @@ You can install the development version of GeNPF from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("cmaronga/GeNPF")
+devtools::install_github("IMCM-OX/GeNPF")
 ```
 
 ## Example
