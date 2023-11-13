@@ -3,3 +3,4 @@
 export(ADNI_unzip)
 export(insync_data)
 export(outsync_data)
+export(unzip_contents)
