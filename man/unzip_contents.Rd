@@ -4,10 +4,12 @@
 \alias{unzip_contents}
 \title{Unzip content of a file or folder containing zipped files}
 \usage{
-unzip_contents(file = NULL)
+unzip_contents(file = NULL, dest_folder = "unzipped_files")
 }
 \arguments{
 \item{file}{A link to Google bucket folder or file to be unzipped}
+
+\item{dest_folder}{destination folder for unzipped contents}
 }
 \value{
 A folder with contents
